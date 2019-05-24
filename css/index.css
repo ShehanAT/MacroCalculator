@@ -1,0 +1,20 @@
+#sliders
+		{
+			width: 80%;
+			padding: 0 10% 0 10%;
+		}
+		#sliders a
+		{
+			font-size: 90%;
+			text-decoration: none;
+		}
+		#container
+		{
+			min-width: 400px;
+			height: 400px;
+			margin: 0 auto;
+		}
+		#invalidMacros{
+			color:red;
+		}
+		text[text-anchor=end]{display:none;;}
