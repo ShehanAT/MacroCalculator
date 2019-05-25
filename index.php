@@ -33,8 +33,11 @@
                           
                           });
 
-  $( "#slider-5" ).slider({
-                          });
+                         $("#slider-5" ).slider({
+                                                  });
+                        $("#slider-1").slider({
+
+                                                });
 
         </script>
         <style>
@@ -121,6 +124,9 @@
         background: #4CAF50;
         cursor: pointer;
         }
+        .title{
+            color: red;
+        }
         </style>
 
     </head>
@@ -128,171 +134,30 @@
     <body>
 
         <div class="container-fluid">
-        <div align="center"><h1><strong>Macro Calculator</strong></h1></div>
-        <p><strong>Enter All the foods you want to eat(10 Max):</strong></p>
+        <div align="center" ><h1 class="title"><strong >Macro Calculator</strong></h1></div>
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <form class="form-inline">
-                    <label class="control-label">1.</label>
-                    <select name="food1">
-                    <option selected disabled>Choose food</option>
-                    <option value="Chicken Breast">Chicken Breast</option>
-                    <option value="Peanuts">Peanuts</option>
-                    <option value="Spinach">Spinach</option>
-                    <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                    <option value="Canned Peaches">Canned Peaches</option>
-                    <option value="Brown Beans">Brown Beans</option>
-                    <option value="Chicken Fries">Chicken Fries</option>
-                    <option value="Rice Cakes">Rice Cakes</option>
-                    <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                    <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-                </form>
-            <form class="form-inline">
-                <label class="control-label">2.</label>
-                <select name="food2">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">3.</label>
-                <select name="food3">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">4.</label>
-                <select name="food4">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">5.</label>
-                <select name="food5">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">6.</label>
-                <select name="food6">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">7.</label>
-                <select name="food7">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">8.</label>
-                <select name="food8">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">9.</label>
-                <select name="food9">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
-            <form class="form-inline">
-                <label class="control-label">10.</label>
-                <select name="food10">
-                <option selected disabled>Choose food</option>
-                <option value="Chicken Breast">Chicken Breast</option>
-                <option value="Peanuts">Peanuts</option>
-                <option value="Spinach">Spinach</option>
-                <option value="Sweat Potatoes Great Value">Sweat Potatoes Great Value</option>
-                <option value="Canned Peaches">Canned Peaches</option>
-                <option value="Brown Beans">Brown Beans</option>
-                <option value="Chicken Fries">Chicken Fries</option>
-                <option value="Rice Cakes">Rice Cakes</option>
-                <option value="Smooth Kraft PB">Smooth Kraft PB</option>
-                <option value="Smuckers Rasberry Jam">Smuckers Rasberry Jam</option>
-                </select>
-            </form>
+                <div class="userInfoSection">
+                    <h3 class="measuringSystemSection">I use:</h3>
+                    <select>
+                        <option value="Select system" selected="selected" disabled hidden>Select Measuring System</option>
+                        <option value="Imperial">Imperial</option>
+                        <option value="Metric">Metric</option>
+                    </select>
+
+                    <h3 class="heightSection">My Height:</h3>
+                    <input type="text" id="heightResult" style="border:0; color:#b9cd6d; font-weight:bold;">
+                    <div id="slider-1" class="heightSlider"></div>
+
+                    <h3 class="weightSection">My Weight:</h3>
+                    <input type="text" id="weightResult" style="border:0; color:#b9cd6d; font-weight:bold;">
+                    <div id="slider-1" class="weightSlider"></div>
+
+                    <h3 class="">Liftin</h3>
+
+
+                </div>
             <div class="AddedFood">
                 <h3 style="color:black">Added Foods:</h3>
                 <ul class="addedFoods">
@@ -313,7 +178,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <p>
-                                <label for="proteinOutput">Carbs %:</label>
+                                <label for="carbOutput">Carbs %:</label>
                                 <input type="text" id="carbOutput" style="border:0; color:#b9cd6d; font-weight:bold;">
                                 </p>
                                 <div id="slider-5" class="carbSlider"></div>
@@ -343,7 +208,7 @@
                         Target Fat(in g): <p id="fat"/></p>
                         Search Food name:<input type="text" class="typeahead tt-query" name="foodName" autocomplete="off" placeholder="type food name" id="foodName"><br><br>
                     </form>
-                        <button  name="search" id="submitFood" onclick="searchFood()">Search</button>
+                        <button  name="search" id="submitFood" onclick="searchFood()">Add Food</button>
 
                     <button type="button" class="btn btn-primary" id="calculateMacros">Calculate Macros!</button>
                 </div>

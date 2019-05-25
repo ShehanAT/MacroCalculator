@@ -470,3 +470,6 @@
 [24-May-2019 17:59:46 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/shehanat/public_html/MacroCalculator/search.php on line 11
 [24-May-2019 17:59:46 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/shehanat/public_html/MacroCalculator/search.php on line 11
 [24-May-2019 18:01:03 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/shehanat/public_html/MacroCalculator/search.php on line 11
+[25-May-2019 01:33:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/shehanat/public_html/MacroCalculator/search.php on line 9
+[25-May-2019 01:33:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/shehanat/public_html/MacroCalculator/search.php on line 9
+[25-May-2019 01:34:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/shehanat/public_html/MacroCalculator/search.php on line 9

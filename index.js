@@ -3,35 +3,62 @@
 
   var foodAdded = [];
   function addFood(){
-    var foodName = $(".foodName").val();
-    $(".foodName").remove();
-    $("#addFood").remove();
-    $.ajax({
-      type:'POST',
-      url:"foodDatabase.php",
-      data:{'foodName2': foodName},
-      success:function(result){
-        console.log(foodName);
-        $(".addedFoods").after(result).html();
-    }});
+
+
+
   }
   function searchFood(){
     var foodSearch = $("#foodName").val();
+    var foodDetails = "";
     $.ajax({
       type:'POST',
       url:"searchDatabase.php",
       data:{'foodName':foodSearch},
       success:function(result){
-          console.log(result);
-          $("#calculateMacros").after(result).html();
+          var foodId = result;
+          console.log(foodId);
+          $.ajax({
+            type:'POST',
+            url:"getFoodDetails.php",
+            data:{'foodId': foodId},
+            success:function(result){
+              foodDetails = result;
+              $.ajax({
+                type:'POST',
+                url:"searchDatabase.php",
+                data:{'foodName2': foodSearch, 'foodDetails':foodDetails},
+                success:function(result){
+                  console.log(foodName);
+                  $(".addedFoods").after(result).html();
+              }});
+            }
+          });
       }
-    })
+    });
 
   }
 $(function(){
 
   var maxRange = 100;
+  $(".heightSlider").slider({
+        value: 50,
+        min: 0,
+        max:100,
+        slide:function(event, ui){
+          $("#heightResult").val((ui.value).toString());
 
+        }
+  });
+  $(".weightSlider").slider({
+      value:50,
+      min:0,
+      max:100,
+      slide:function(event, ui){
+        $("#weightResult").val((ui.value).toString());
+      }
+  });
+  $("")
+  $("#heightResult").val($(".heightSlider").slider("value"));
   function addFood(){
     var foodName = $(".foodName").val();
     $.ajax({
